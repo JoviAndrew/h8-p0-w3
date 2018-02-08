@@ -6,7 +6,7 @@ function targetTerdekat(arr) {
     let temp1 = 0;
     let temp2 = 0;
 
-    for(counter = 0; counter<arr.length; counter++){
+    for(let counter = 0; counter<arr.length; counter++){
         if(counterO !== 0 && counterX !== 0){
             if(temp2 > temp1){
                 result = temp2-temp1;

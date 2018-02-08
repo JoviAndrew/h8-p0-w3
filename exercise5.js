@@ -1,27 +1,20 @@
-function balikString(kata){
-    let result = '';
-
-    let counter = kata.length;
-    let counterResult = 0;
-    
-    while(counter > 0){
-     result += kata.substring(counter-1, counter);
-     counter--;
-    }
-
-    return result;
-}
-
 function palindrome(kata) {
     // you can only write your code here!
-    var newKata = balikString(kata);
+    let counter = kata.length;
+    let counterResult = 0;
+    let newKata = '';
+
+    while(counter > 0){
+        newKata += kata.substring(counter-1, counter);
+        counter--;
+    }
 
     if(kata === newKata){
         return true;
     }else{
         return false;
     }
-  }
+}
   
   // TEST CASES
   console.log(palindrome('katak')); // true

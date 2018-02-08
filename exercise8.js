@@ -3,11 +3,9 @@ function pasanganTerbesar(num) {
     let stringNum = num.toString();
     let result = 0;
 
-    for(counter = 0; counter<stringNum; counter++){
+    for(let counter = 0; counter<stringNum; counter++){
         let temp = '';
-        if(stringNum[counter+1] === undefined){
-            
-        }else{
+        if(stringNum[counter+1] !== undefined){
             temp = stringNum[counter]+stringNum[counter+1];
             let numberTemp = Number(temp);
 
